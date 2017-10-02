@@ -1,0 +1,19 @@
+﻿<div class="user row">
+    <div class="col-md-2">
+        <span class="">Candidate Id: {{id}}</span>
+    </div>
+    <div class="col-md-2">
+        <span class="">Name: {{name}}</span>
+    </div>
+    <div class="col-md-2">
+        <a href="#!/Candidate/Edit/{{id}}" class="btn btn-default">Edit</a>
+    </div>
+
+    <div class="col-md-2">
+        <a href="#!/Interview/Create/{{id}}" class="btn btn-default">Interview</a>
+    </div>
+
+    <div class="col-md-2">
+        <a class="btn btn-default" ng-click="delete(id)">Delete</a>
+    </div>
+</div>

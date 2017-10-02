@@ -1,0 +1,16 @@
+﻿<h1>Create Candidate</h1>
+
+<form>
+    <input type="hidden" ng-model="candidate.id" />
+    <input type="text" ng-model="candidate.name" disabled />
+
+    <select ng-model="jobOportunities.selected">
+        <option ng-repeat="jobOportunity in jobOportunities" value={{jobOportunity.Id}}>{{jobOportunity.Name}}</option>
+    </select>
+
+    <select ng-model="technologies.selected" multiple>
+        <option ng-repeat="technology in technologies" value="{{technology.Id}}">{{technology.Name}}</option>
+    </select>
+
+    <button class="btn btn-default" ng-click="create(candidate, jobOportunities, technologies)">Create</button>
+</form>

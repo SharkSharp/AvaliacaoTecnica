@@ -1,0 +1,38 @@
+﻿.ng-app {
+    padding-top: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.user-detail-projects {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    width: 50%;
+}
+
+.user-list {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    width: 50%;
+}
+
+.user-detail {
+    margin: auto;
+    padding-top: 15px;
+    width: 65%;
+}
+
+.user-detail-user {
+    text-align: center;
+    width: 20%;
+}
+
+.title {
+    background-color: #e5e5e5;
+}

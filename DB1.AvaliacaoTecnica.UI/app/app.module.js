@@ -1,0 +1,1 @@
+﻿var app = angular.module('db1.avaliacao.tecnica', ['ngRoute']);

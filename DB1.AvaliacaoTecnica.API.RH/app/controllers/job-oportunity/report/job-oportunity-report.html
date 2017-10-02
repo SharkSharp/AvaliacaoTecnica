@@ -1,0 +1,37 @@
+﻿<div class="ng-list">
+    <form>
+        <ul class="list-group">
+            <li ng-repeat="technology in technologies" class="list-group-item">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <span>{{technology.Name}}</span>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="number" ng-model="dict[technology.Id]" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <button class="btn btn-default" ng-click="report(dict)">Report</button>
+    </form>
+</div> 
+
+<div class="ng-list">
+    <ul class="list-group">
+        <li ng-repeat="result in results" class="list-group-item">
+            <div class="row">
+                <div class="col-md-3">
+                    <span class="">Candidate Id: {{result.Candidate.Id}}</span>
+                </div>
+                <div class="col-md-3">
+                    <span class="">Name: {{result.Candidate.Name}}</span>
+                </div>
+
+                <div class="col-md-3">
+                    <span class="">Grade: {{result.Grade}}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <a href="#!/JobOportunity/List" class="btn btn-default">Return</a>
+</div>

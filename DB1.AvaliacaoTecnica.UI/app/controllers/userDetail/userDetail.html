@@ -1,0 +1,37 @@
+﻿<div class="user-detail row">
+    <div class="user-detail-user col-sm-5">
+        <ul class="list-group">
+            <li class="list-group-item title">User</li>
+
+            <li class="list-group-item">
+                <div>
+                    <span>UserId: {{id}}</span>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <span>Login: {{login}}</span>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <a href={{url}}>Perfil</a>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <span>Data cadastro: {{createdAt}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="user-detail-projects col-sm-5">
+        <ul class="list-group">
+            <li class="list-group-item title">Projects</li>
+            <li ng-repeat="project in projects" class="list-group-item">
+                <project id={{project.id}} name={{project.name}} url={{project.html_url}}></project>
+            </li>
+        </ul>
+        <a class="btn btn-default" href="#/userList">Return</a>
+    </div>
+</div>
